@@ -1,6 +1,6 @@
 //mongodb+srv://fullstack:fullstack23@cluster0.zu4qpgo.mongodb.net/?retryWrites=true&w=majority
 
-// password fullstack23
+// password fullstack
 
 const mongoose = require("mongoose")
 
@@ -11,7 +11,7 @@ if (process.argv.length<3){
 
 const password = process.argv[2]
 
-const url = "mongodb+srv://fullstack:fullstack23@cluster0.zu4qpgo.mongodb.net/notesapp?retryWrites=true&w=majority"
+const url = `mongodb+srv://${password}:fullstack23@cluster0.zu4qpgo.mongodb.net/notesapp?retryWrites=true&w=majority`
 
 mongoose.set("strictQuery", false)
 mongoose.connect(url)
@@ -26,7 +26,7 @@ const Note = mongoose.model("Note", noteSchema)
 
 // this is a constructor function, creates a new js object 
 const note = new Note({
-    content: "HTML is easy",
+    content: "Adding another note ",
     important: true,
 })
 
