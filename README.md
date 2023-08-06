@@ -1,3 +1,19 @@
+# NOTES APP - A MERN STACK WEB APP
+
+A user can create a new note. This note is saved to a MongoDB cloud database. 
+
+Give the note an importance. 
+
+Simple task-tracker.
+
+
+The app is hosted on render. It is avaialable to view at the link below.
+
+https://notesapp-test.onrender.com/
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
